@@ -1,0 +1,27 @@
+/* Body Style */
+body {
+    background-color: #F5EFE6;
+    color: #4B3832;
+}
+
+/* Header Style */
+header {
+    background-color: #8B5E3B;
+    color: #FFFFFF;
+}
+
+/* Navigation Style */
+nav {
+    background-color: #D4A373;
+}
+
+/* Main Content Style */
+main {
+    background-color: #FFFFFF;
+}
+
+/* Footer Style */
+footer {
+    background-color: #8B5E3B;
+    color: #FFFFFF;
+}
