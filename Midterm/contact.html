@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--Tyler Graham 10/11/2025 Midterm Project-->
+<html lang="en">
+
+<!--Begin Head-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Page">
+    <meta name="author" content="Tyler Graham">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<!--End Head-->
+
+<!--Begin Body-->
+<body>
+
+<!--Begin Wrapper-->    
+<div id="wrapper">    
+
+<!--Begin Header-->    
+    <header>
+        <h1>Tyler Graham</h1>
+        <h2>Web Designer & Developer</h2>
+
+<!--Begin Navigation-->
+        <nav>
+            <ul class="topnav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li class="right"><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+<!--End Navigation-->
+
+    </header>
+<!--End Header-->
+
+<!--Begin Main-->
+    <main>
+
+<!--Begin Contact Section-->        
+    <section>
+        <h2>Contact Me</h2>
+            <div class="contact-box">
+                <form action="send_email.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+    </section>
+<!--End Contact Section-->
+
+    </main>
+<!--End Main-->
+
+<!--Begin Footer-->
+    <footer>
+        <p>&copy; 2025 Tyler Graham</p>
+    </footer>
+<!--End Footer-->
+
+</div>
+<!--End Wrapper-->
+
+</body>
+<!--End Body-->
+
+</html>
