@@ -1,0 +1,510 @@
+/*
+Author: Tyler Graham
+Date: 12/03/2025
+File: styles.css
+Subject: Final Exam - Solar System Website
+Description: Styles Sheet - Solar System Website
+*/
+
+/*********************** Reset **************************************/
+/*********************** Clear All Margings & Padding ***************/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*********************** General Styles *****************************/
+/*********************** Body - Wrapper - Paragraph - Images ********/
+#wrapper {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #333;
+}
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1em;
+}
+h1 {
+  font-size: 2.5em;
+  margin: 0.5em 0;
+  padding: 5px;
+  color: lightcoral;
+  text-align: center;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0 0 0 1em;
+  padding: 0;
+  color: cornflowerblue;
+}
+h4 {
+  font-size: 1.2em;
+}
+p {
+  font-size: 1em;
+  color: #fff;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 1.5em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.mail a {
+  margin: 1em 0;
+  color: lightcoral;
+  text-decoration: none;
+}
+.mail a:hover {
+  text-decoration: underline;
+  color: cornflowerblue;
+}
+.copernicus {
+  color: lightcoral;
+  text-decoration: none;
+}
+.copernicus:hover {
+  text-decoration: underline;
+  color: cornflowerblue;
+}
+
+/*********************** Top Navigation *****************************/
+/*********************** Horizontal *********************************/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 6vh;
+  background-color: #333;
+}
+.logo {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 25px;
+}
+.nav-links {
+  display: flex;
+  text-transform: capitalize;
+  justify-content: space-around;
+  width: 60%;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 1em;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/*********************** Hamburger Menu *****************************/
+/*********************** Hidden *************************************/
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+/*********************** Bottom Navigation **************************/
+/*********************** Horizontal *********************************/
+.bottom-nav-links {
+  display: flex;
+  text-transform: capitalize;
+  justify-content: space-around;
+  width: 50%;
+}
+.bottom-nav-links li {
+  list-style: none;
+}
+.bottom-nav-links a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 1em;
+}
+.bottom-nav-links a:hover {
+  text-decoration: underline;
+}
+
+/*********************** Header Image *******************************/
+/*********************** Two Column Desktop *************************/
+img {
+  width: 100%;
+  height: auto;
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/*********************** Ordered Lists ******************************/
+ol {
+  margin: 0 0 1em 2em;
+  padding: 10px;
+  line-height: 1.5em;
+  color: #fff;
+}
+ol strong {
+  color: lightcoral;
+}
+ol li {
+  list-style-type: none;
+}
+
+/*********************** Unordered Lists ****************************/
+ul {
+  margin: 0;
+  padding: 10px;
+  line-height: 1.5em;
+  color: #fff;
+}
+.links-used ul {
+  margin: 0 0 1em 2em;
+}
+.image-credits ul {
+  margin: 0 0 1em 2em;
+}
+.main-content ul {
+  margin: 0 0 1em 2em;
+}
+
+/*********************** Details Page *******************************/
+/*********************** Planets Two Column *************************/
+.planets h2 {
+  text-align: left;
+  padding: 1em 0 0 0.8em;
+
+}
+.planets-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/*********************** Hide Header Image **************************/
+.planet-header-image {
+  display: none;
+}
+
+/*********************** Contact Page *******************************/
+.contact-box {
+  display: grid;
+  text-align: left;
+  width: 75%;
+  margin: 0 auto;
+}
+.contact-box div {
+  background-color: #fff;
+  border: 1px solid #222;
+  padding: 10px;
+}
+form {
+  font-size: 1.1em;
+  width: 100%;
+  margin: 10px auto;
+  margin-bottom: 3em;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #222;
+  color: #fff;
+}
+input[type="text"], textarea {
+  font-size: 1.1em;
+  width: 100%;
+  padding: 10px;
+  margin: 1em 0 1.5em 0;
+  border: 1px solid #222;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input[type="email"], textarea {
+  font-size: 1.1em;
+  width: 100%;
+  padding: 10px;
+  margin: 1em 0 1.5em 0;
+  border: 1px solid #222;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input[type="date"], select{
+  font-size: 1.1em;
+  width: 100%;
+  padding: 10px;
+  margin: 1em 0 1.5em 0;
+  border: 1px solid #222;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+textarea {
+  height: 150px;
+  resize: vertical;
+  font-size: 1.1em;
+}
+input[type="submit"] {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 1em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+input[type="submit"]:hover {
+  background-color: white;
+  color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+}
+input[type="reset"] {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 1em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: left;
+}
+input[type="reset"]:hover {
+  background-color: white;
+  color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+}
+
+/*********************** Credits Page *******************************/
+.credits-content {
+  display: block;
+  text-align: left;
+  background-color: #222;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+/*Image Credits*/
+.image-credits h2 {
+  text-align: left;
+  padding: 1em 0;
+  margin-left: 35px;
+}
+.image-credits h4 {
+  color: lightcoral;
+  text-align: left;
+  padding: 0;
+  margin-left: 35px;
+  margin-bottom: 0.5em;
+}
+.image-credits {
+  padding: 0;
+}
+.image-credits ul {
+  margin: 0;
+  padding: 0;
+}
+.image-credits li {
+  list-style-type: none;
+  margin-left: 35px;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+/*Links Used*/
+.links-used h2 {
+  text-align: left;
+  padding: 1em 0;
+  margin-left: 35px;
+}
+.links-used h4 {
+  color: lightcoral;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 0.5em;
+}
+.links-used {
+  padding: 0;
+  line-height: 2.5em;
+}
+.links-used ul {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 10px;
+  margin: 0;
+}
+.links-used li {
+  list-style-type: none;
+  margin-left: 35px;
+  margin-bottom: 1em;
+}
+
+/*********************** Tablet *************************************/
+@media screen and (max-width: 1024px) {
+  #wrapper {
+    background-color: #333;
+    padding: 0;
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  /********************* Navigation *********************************/
+  .nav-links {
+    width: 100%;
+  }
+  .bottom-nav-links {
+    width: 100%;
+  }
+  .logo {
+    display: none;
+  }
+
+/*********************** Contact Form *******************************/
+  .contact-box {
+    width: 75%;
+  }
+  .image-container {
+    display: block;
+  }
+  img {
+    width: 100%;
+  }
+  .header-image-right {
+    display: none;
+  }
+
+/*********************** Planets ************************************/
+/*********************** Stacked ************************************/
+  .planets-container {
+    display: block;
+  }
+  .planet-header-image {
+    display: none;
+  }
+
+/**************************** Credits *******************************/
+  .credits-content {
+    display: block;
+    text-align: left;
+    background-color: #222;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  .image-credits h2 {
+    text-align: left;
+  }
+   .links-used h2 {
+    text-align: left;
+  }
+    .links-used p {
+    text-align: left;
+    padding: 5px;
+    margin-left: 2em;
+  }
+}
+
+/*********************** Mobile *************************************/
+@media screen and (max-width: 600px) {
+  #wrapper {
+    background-color: #333;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
+/*********************** Navigation *********************************/
+/*********************** Vertical ***********************************/
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 30vh;
+    top: 6vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+  .bottom-nav-links {
+    width: 100%;
+    font-size: 1em;
+  }
+  .nav-links li {
+    opacity: 1;
+  }
+
+/*********************** Hamburger Menu *****************************/
+/*********************** Visible ************************************/
+  .burger {
+    display: block;
+  }
+  .nav-links-active {
+    transform: translateX(0%);
+  }
+
+/*********************** Header Image *******************************/
+/*********************** Right Image Hidden *************************/
+  .image-container {
+    display: block;
+  }
+  img {
+    width: 100%;
+  }
+  .header-image-right {
+    display: none;
+  }
+
+/*********************** Show Header Image **************************/
+  .planet-header-image {
+    display: block;
+  }
+
+/*********************** Contact Form *******************************/
+  .contact-box {
+    width: 100%;
+  }
+/**************************** Credits Page **************************/ 
+  .image-credits {
+    text-align: left;
+  }
+  .image-credits h2 {
+    text-align: left;
+  }
+  .links-used {
+    text-align: left;
+  }
+  .links-used p {
+    text-align: left;
+    padding: 5px;
+    margin-left: 2em;
+  }
+  .links-used h2 {
+    text-align: left;
+  }
+  .credits-content {
+    background-color: #333;
+    width: 100%;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%); 
+}
